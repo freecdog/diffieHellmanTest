@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+    #content
+        div(id='infoHolder')
+            | infoHolder
+
+    script(src="/javascripts/jquery-1.9.1.js")
+    script(src="/javascripts/underscore.js")
+    script(src="/javascripts/backbone.js")
+    script(src="/javascripts/dh.js")
+
+    script.
+        (function($) {
+            $.dh.bootstrap();
+        })(jQuery);
